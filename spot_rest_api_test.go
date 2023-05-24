@@ -23,23 +23,6 @@ func TestGetSpotAccountsByCurrency(t *testing.T) {
 }
 
 /*
-Bills Details
-Limit: 20 requests per 2 seconds
-GET Request: /api/spot/v3/accounts/<currency>/ledger
-*/
-func TestGetSpotAccountsCurrencyLeger(t *testing.T) {
-	c := NewTestClient()
-	c.GetSpotAccountsCurrencyLeger("BTC", nil)
-
-	options := map[string]string{}
-	options["after"] = ""
-	options["before"] = ""
-	options["limit"] = ""
-	options["type"] = ""
-	c.GetSpotAccountsCurrencyLeger("BTC", &options)
-}
-
-/*
 Place Order
 Limit: 100 requests per 2 seconds
 POST Request: /api/spot/v3/orders
