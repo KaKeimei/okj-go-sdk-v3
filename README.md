@@ -1,6 +1,8 @@
 # Unofficial go sdk for okcoin japan v3 api.
 
 This is forked and modified from https://github.com/okcoinjapan/V3-Open-API-SDK
+
+Documentation: https://dev.okcoin.jp/
 -----
 
 ### 1.Downloads or updates OKCoin code's dependencies, in your command line:
