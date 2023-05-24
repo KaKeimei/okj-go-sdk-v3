@@ -8,7 +8,7 @@ Documentation: https://dev.okcoin.jp/
 ### 1.Downloads or updates OKCoin code's dependencies, in your command line:
 
 ```
-go get -u github.com/okcoinjapan/V3-Open-API-SDK/okcoin-go-sdk-api
+go get -u github.com/KaKeimei/okj-go-sdk-v3
 ```
 ### 2.Write the go file. warm tips: test go file, must suffix *_test.go, eg: okcoin_open_api_v3_test.go
 ```
@@ -16,7 +16,7 @@ package gotest
 
 import (
 	"fmt"
-	"github.com/okcoinjapan/V3-Open-API-SDK/okcoin-go-sdk-api"
+	"github.com/KaKeimei/okj-go-sdk-v3"
 	"testing"
 )
 
