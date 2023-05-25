@@ -300,12 +300,12 @@ func (client *Client) GetSpotInstrumentTicker(instrument_id string) (*Ticker, er
 }
 
 type Trade struct {
-	Time      string  `json:"time"`
-	Timestamp string  `json:"timestamp"`
-	TradeID   int     `json:"trade_id"`
-	Price     float64 `json:"price"`
-	Size      float64 `json:"size"`
-	Side      string  `json:"side"`
+	Time      string `json:"time"`
+	Timestamp string `json:"timestamp"`
+	TradeID   string `json:"trade_id"`
+	Price     string `json:"price"`
+	Size      string `json:"size"`
+	Side      string `json:"side"`
 }
 
 /*
