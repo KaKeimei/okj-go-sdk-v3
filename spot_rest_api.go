@@ -221,16 +221,10 @@ func (client *Client) GetSpotInstruments() ([]Instrument, error) {
 	return r, nil
 }
 
-type Order struct {
-	Price     string `json:"0"`
-	Size      string `json:"1"`
-	NumOrders string `json:"2"`
-}
-
 type OrderBook struct {
-	Asks      []Order `json:"asks"`
-	Bids      []Order `json:"bids"`
-	Timestamp string  `json:"timestamp"`
+	Asks      [][]string `json:"asks"`
+	Bids      [][]string `json:"bids"`
+	Timestamp string     `json:"timestamp"`
 }
 
 /*
